@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    # Имя сервиса
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Прокидываем порт
+    ports:
+      - "80:80"
